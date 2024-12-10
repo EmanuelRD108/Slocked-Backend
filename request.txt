@@ -1,0 +1,130 @@
+iniciar sempre o db
+
+rotas: users
+// all Users
+get:
+http://localhost:5000/users
+
+// Users id 
+get:
+http://localhost:5000/users/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd 
+
+//create a user
+post:
+http://localhost:5000/users
+
+{
+	"name": "fulsss",
+	"tags": "ghgfvkj876",
+	"matricula": "5646546",
+	"disciplinaOUcargo": "cordenador",
+	"email": "admin@gmil.com",
+	"password": "123456",
+	"confPassword":"123456",
+	"role": "admin"
+}
+
+{
+	"name": "comun",
+	"tags": "ghgfvkj876",
+	"matricula": "5646546",
+	"disciplinaOUcargo": "cordenador",
+	"email": "comun@gmil.com",
+	"password": "123456",
+	"confPassword":"123456",
+	"role": "user"
+}
+
+//update users
+patch: 
+http://localhost:5000/users/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd
+
+{
+	"name": "fulsss",
+	"tags": "ghgfvkj876",
+	"matricula": "5646546",
+	"disciplinaOUcargo": "cordenador",
+	"email": "admin@gmil.com",
+	"password": "123456",
+	"confPassword":"123456",
+	"role": "admin"
+}
+
+delete users
+delete:
+http://localhost:5000/users/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd
+
+//fazer longin user
+post:
+http://localhost:5000/login
+
+{
+	"email": "admin@gmil.com",
+	"password": "123456",
+
+}
+//fazer ver seu user
+post:
+http://localhost:5000/me
+
+{
+	"email": "admin@gmil.com",
+	"password": "123456",
+}
+
+delete para deslogar
+delete:
+http://localhost:5000/logout
+{
+	"email": "admin@gmil.com",
+	"password": "123456",
+}
+
+{
+	"email": "comun@gmil.com",
+	"password": "123456",
+}
+
+rotas: salas das salas tenho que me logar para acessar usuario comum e admins.
+// all salas
+get:
+http://localhost:5000/salas
+
+// salas id 
+get:
+http://localhost:5000/salas/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd 
+
+
+//create a salas so admin
+post:
+http://localhost:5000/salas
+    {
+    "name":"mineirinho2",
+    "numero":"D16",
+    "status":"ativo"
+    }
+
+//update salas
+patch: 
+http://localhost:5000/salas/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd
+
+    {
+    "name":"mineirinho2",
+    "numero":"D16",
+    "status":"ativo"
+    }
+    
+delete salas
+http://localhost:5000/salas/2b22c47f-f5ed-4cc3-8b0b-a511b1bc22fd
+
+
+
+
+
+
+
+adicionar na routes salas verificações de usuario
+verifyUser
+
+users
+verifyUser, adminOnly

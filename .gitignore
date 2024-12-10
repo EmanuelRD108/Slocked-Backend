@@ -1,0 +1,8 @@
+node_modules
+.env
+request.rest
+esp8266/slocked_tranca_esp/.pio
+esp8266/slocked_tranca_esp/.vscode/.browse.c_cpp.db*
+esp8266/slocked_tranca_esp/.vscode/c_cpp_properties.json
+esp8266/slocked_tranca_esp/.vscode/launch.json
+esp8266/slocked_tranca_esp/.vscode/ipch
