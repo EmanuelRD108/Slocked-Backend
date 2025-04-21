@@ -4,7 +4,7 @@ import Sala from "../models/SalaModel.js";
 // Change this to point to your MQTT broker
 const MQTT_HOST_NAME = "mqtt://192.168.18.81:1883";
 
-// CODIGO ANTIGO - EU (HARI) REFIZ.
+// CODIGO ANTIGO
 // const updateSala = async function (lockId, lockState) {
 //   try {
 //     const sala = await Sala.findOne({
@@ -64,7 +64,7 @@ const updateSala = async function (lockId, lockState) {
   }
 };
 
-// CODIGO ANTIGO - EU (HARI) REFIZ
+// CODIGO ANTIGO
 // const messageCallback = async (topic, message) => {
 //   const command = message.toString();
 //   let piece = 0;
